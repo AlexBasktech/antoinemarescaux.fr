@@ -1,0 +1,40 @@
+# robots.txt - Photographe Drone Nord Gironde
+
+User-agent: *
+Allow: /
+
+# Interdire l'accès aux dossiers système
+Disallow: /assets/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Permettre l'accès aux images et CSS pour le rendu
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Interdire les fichiers sensibles
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.inc$
+
+# Sitemap
+Sitemap: https://antoinemarescaux.fr/sitemap.xml
+
+# Temps de crawl (optionnel)
+Crawl-delay: 1
+
+# Instructions spécifiques pour Google
+User-agent: Googlebot
+Allow: /
+
+# Instructions spécifiques pour Bing
+User-agent: Bingbot
+Allow: /
+
+# Bloquer les mauvais bots (optionnel)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
